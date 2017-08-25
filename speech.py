@@ -26,6 +26,7 @@ class MainWindow(QMainWindow):
             self.statusBar().showMessage('listening...')
             audio = recognize.listen(source)
             
+        self.statusBar().showMessage('recognizing...')
         speech_string =  recognize.recognize_google(audio)
         self.statusBar().showMessage(speech_string)
         
