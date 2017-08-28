@@ -1,0 +1,6 @@
+full, 10.0
+babu, 10.0
+aswin, 10.0
+hello, 40.0
+hi, 20.0
+stop, 10.0
