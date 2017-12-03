@@ -1,2 +1,2 @@
 # random_stuff
-Weird experiments, nonsense stuff, things of not much significance
+All the weird and wacky stuff goes here... Dig in, you might be delighted :D
