@@ -36,6 +36,13 @@ def main():
     # Lets try out a method
     sparky.fetch()
 
+    # Lets check the dog's name
+    print("The dog's name is", sparky.name)
+
+    # Lets try calling a method in Animal
+    # Hint, it gets overriden by Dog
+    sparky.speak()
+
 
 # Call the main function
 main()
