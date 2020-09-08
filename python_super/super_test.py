@@ -17,3 +17,12 @@ class Dog(Animal):
 
     def speak():
         print("Bow Bow, I am the dog of wisdom!")
+
+class GoldenRetriever(Dog):
+    def __init(self):
+        color = "Gold (duh!)"
+        is_cute = True
+
+    def fetch():
+        print("Here is the stick you threw, -")
+
