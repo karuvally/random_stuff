@@ -5,5 +5,5 @@ def index(request):
 
 
 def easter_eggs(request):
-    return(HttpResponse("There are no easter eggs here.")
+    return(HttpResponse("There are no easter eggs here."))
 
