@@ -9,6 +9,7 @@ class Animal:
     def speak(self):
         print("Animals produce wide variety of sounds...")
 
+
 class Dog(Animal):
     def __init__(self):
        self.no_of_legs = 4
@@ -18,6 +19,7 @@ class Dog(Animal):
     def speak(self):
         print("Bow Bow, I am the dog of wisdom!")
 
+
 class GoldenRetriever(Dog):
     def __init__(self, name):
         self.color = "Gold (duh!)"
@@ -26,6 +28,10 @@ class GoldenRetriever(Dog):
 
     def fetch(self):
         print("Here is the stick you threw, -")
+
+    # Lets speak, but with super in it :D
+    def super_speak(self):
+        super().speak()
 
 
 # The function where everything happens
@@ -39,9 +45,10 @@ def main():
     # Lets check the dog's name
     print("The dog's name is", sparky.name)
 
-    # Lets try calling a method in Animal
-    # Hint, it gets overriden by Dog
-    sparky.speak()
+    # Speak, my friend
+    # As you can see, this is not working as expected
+    # It is still calling the method in Dog class
+    sparky.super_speak()
 
 
 # Call the main function
