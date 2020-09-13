@@ -46,8 +46,7 @@ def main():
     print("The dog's name is", sparky.name)
 
     # Speak, my friend
-    # As you can see, this is not working as expected
-    # It is still calling the method in Dog class
+    # Here the speak() method in Animal class gets called
     sparky.super_speak()
 
 
