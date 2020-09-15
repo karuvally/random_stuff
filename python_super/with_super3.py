@@ -20,8 +20,14 @@ class Dog(Animal):
         print("Bow Bow, I am the dog of wisdom!")
 
 
+class Husky(Dog):
+    def __init__(self):
+        self.breed = "Husky"
+
+
 class GoldenRetriever(Dog):
     def __init__(self, name):
+        self.breed = "Golden Retriever"
         self.color = "Gold (duh!)"
         self.is_cute = True
         self.name = name
@@ -30,8 +36,9 @@ class GoldenRetriever(Dog):
         print("Here is the stick you threw, -")
 
     # Lets speak, but with super in it :D
+    # This time, we try to specify the class type
     def super_speak(self):
-        super().speak()
+        super(Dog, self).speak()
 
 
 # The function where everything happens
@@ -51,4 +58,3 @@ def main():
 
 # Call the main function
 main()
-
